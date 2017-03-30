@@ -27,6 +27,7 @@ print, 'Filter is: '+filter
 if datatype eq 'arc' then begin
    sumspax = 0
    case filter of
+      'Hbb': refchannel = 1083
       'Kbb': refchannel = 904 ; 389 (Ar), 904 (Kr)
    endcase
 endif else if datatype eq 'sky' then begin
